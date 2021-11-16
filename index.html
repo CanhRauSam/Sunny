@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Mulish:wght@300;700&family=Playfair+Display:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="./scss/style.css">
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- header -->
+        <header class="header">
+            <div class="container">
+                <div class="header-main">
+                    <img srcset="./images/logo.png 2x" alt="logo">
+                    <div class="menu-toggle">
+                        <ion-icon name="menu-outline"></ion-icon>
+                    </div>
+                    <ul class="menu">
+                        <li class="menu-item">
+                            <a href="#" class="menu-link">Home</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#" class="menu-link">Destinations</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#" class="menu-link">About</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#" class="menu-link">Partner</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#" class="btn btn--secondary">Login</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#" class="btn btn--primary">Register</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <!-- end header -->
+        <!-- main -->
+        <main>
+            <!-- hero-forms -->
+            <section class="hero">
+                <div class="container">
+                    <div class="hero-main">
+                        <div class="hero-content">
+                            <h1 class="hero-heading heading">
+                                Explore and Travel
+                            </h1>
+                            <div class="hero-caption">Holiday Finder</div>
+                            <div class="hero-forms">
+                                <div class="dropdown">
+                                    <div class="dropdown-select">
+                                        <span class="dropdown-menu">location</span>
+                                        <ion-icon name="chevron-down-outline"></ion-icon>
+                                    </div>
+                                    <div class="dropdown-list">
+                                        <div class="dropdown-item">Title</div>
+                                        <div class="dropdown-item">Title</div>
+                                        <div class="dropdown-item">Title</div>
+                                    </div>
+                                </div>
+                                <div class="dropdown">
+                                    <div class="dropdown-select">
+                                        <span class="dropdown-menu">Activity</span>
+                                        <ion-icon name="chevron-down-outline"></ion-icon>
+                                    </div>
+                                    <div class="dropdown-list">
+                                        <div class="dropdown-item">Title</div>
+                                        <div class="dropdown-item">Title</div>
+                                        <div class="dropdown-item">Title</div>
+                                    </div>
+                                </div>
+                                <div class="dropdown">
+                                    <div class="dropdown-select">
+                                        <span class="dropdown-menu">Grade</span>
+                                        <ion-icon name="chevron-down-outline"></ion-icon>
+                                    </div>
+                                    <div class="dropdown-list">
+                                        <div class="dropdown-item">Title</div>
+                                        <div class="dropdown-item">Title</div>
+                                        <div class="dropdown-item">Title</div>
+                                    </div>
+                                </div>
+                                <div class="dropdown">
+                                    <div class="dropdown-select">
+                                        <span class="dropdown-menu">Date</span>
+                                        <ion-icon name="chevron-down-outline"></ion-icon>
+                                    </div>
+                                    <div class="dropdown-list">
+                                        <div class="dropdown-item">Title</div>
+                                        <div class="dropdown-item">Title</div>
+                                        <div class="dropdown-item">Title</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#!" class="btn btn--primary">Explore</a>
+                        </div>
+                        <div class="hero-image">
+                            <img srcset="./images/img1.png 2x" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- end hero forms -->
+            <!-- explore -->
+            <section class="explore">
+                <div class="container">
+                    <div class="explore-main">
+                        <div class="explore-image">
+                            <img srcset="./images/img2.png 2x" alt="">
+                        </div>
+                        <div class="explore-content">
+                            <h2 class="heading heading--small explore-heading">A new way to explore the world</h2>
+                            <p class="text explore-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Placeat dolore
+                                dolor atque iure nostrum eligendi debitis consectetur odit maxime quia praesentium
+                                necessitatibus suscipit, libero quas doloremque dignissimos laborum maiores? Sit?</p>
+                            <a href="#!" class="btn btn--primary">Learn more</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- end explore -->
+            <!-- feature -->
+            <section class="destination">
+                <div class="container">
+                    <div class="destination-heading">
+                        <h2 class="heading heading--small">Featured destinations</h2>
+                        <a href="#!" class="viewall">
+                            <span>View all</span>
+                            <ion-icon name="chevron-forward-outline"></ion-icon>
+                        </a>
+                    </div>
+                    <div class="destination-list">
+                        <div class="destination-item">
+                            <div class="destination-image">
+                                <img srcset="./images/destination1.png 2x" alt="">
+                            </div>
+                            <div class="destination-content">
+                                <h3 class="destination-name">Raja Ampat</h3>
+                                <span class="destination-country">Indonesia</span>
+                            </div>
+                        </div>
+                        <div class="destination-item">
+                            <div class="destination-image">
+                                <img srcset="./images/destination2.png 2x" alt="">
+                            </div>
+                            <div class="destination-content">
+                                <h3 class="destination-name">Fanjingshan</h3>
+                                <span class="destination-country">China</span>
+                            </div>
+                        </div>
+                        <div class="destination-item">
+                            <div class="destination-image">
+                                <img srcset="./images/destination3.png 2x" alt="">
+                            </div>
+                            <div class="destination-content">
+                                <h3 class="destination-name">Vevey</h3>
+                                <span class="destination-country">Switzerland</span>
+                            </div>
+                        </div>
+                        <div class="destination-item">
+                            <div class="destination-image">
+                                <img srcset="./images/destination4.png 2x" alt="">
+                            </div>
+                            <div class="destination-content">
+                                <h3 class="destination-name">Skadar</h3>
+                                <span class="destination-country">Montenegro</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- end feature -->
+            <!-- guides -->
+            <section class="guide">
+                <div class="container">
+                    <div class="guide-main">
+                        <div class="guide-content">
+                            <h2 class="heading heading--small guide-heading">Guides by Thousand Sunny</h2>
+                            <p class="text guide-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima
+                                consectetur tempora labore ducimus sit voluptas unde quasi repellendus molestias
+                                deserunt?</p>
+                            <a href="#!" class="btn btn--primary">Download</a>
+                        </div>
+                        <div class="guide-image">
+                            <img srcset="./images/img3.png 2x" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- end guides -->
+            <!-- testimonial -->
+            <section class="testimonial">
+                <div class="container">
+                    <div class="testimonial-main">
+                        <h2 class="heading heading--small  testimonial-heading">Testimonials</h2>
+                        <div class="testimonia-wrapper">
+                            <!-- <div class="arrows">
+                                <div class="arrow-left arrow">
+                                    <ion-icon name="chevron-back-outline"></ion-icon>
+                                </div>
+                                <div class="arrow-right arrow">
+                                    <ion-icon name="chevron-forward-outline"></ion-icon>
+                                </div>
+                            </div> -->
+                            <div class="testimonial-list">
+                                <div class="testimonial-item">
+                                    <div class="testimonial-content">
+                                        <div class="testimonial-rating">
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star"></ion-icon>
+                                        </div>
+                                        <p class="text testimonial-desc">
+                                            "Lorem ipsum dolor sit amet consectetur adipisicing elit.Veritatis eligendi
+                                            laborum
+                                            esse explicabo. Corporis!"
+                                        </p>
+                                        <div class="testimonial-author">
+                                            <h3 class="testimonial-name">Exward Newgate</h3>
+                                            <h4 class="testimonial-job">Founder Circle</h4>
+                                        </div>
+                                    </div>
+                                    <div class="testimonial-image">
+                                        <img srcset="https://images.unsplash.com/photo-1636573563446-5cd9479b75ba?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80 2x"
+                                            alt="">
+                                    </div>
+                                </div>
+                                <div class="testimonial-item">
+                                    <div class="testimonial-content">
+                                        <div class="testimonial-rating">
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star"></ion-icon>
+                                        </div>
+                                        <p class="text testimonial-desc">
+                                            "Lorem ipsum dolor sit amet consectetur adipisicing elit.Veritatis eligendi
+                                            laborum
+                                            esse explicabo. Corporis!"
+                                        </p>
+                                        <div class="testimonial-author">
+                                            <h3 class="testimonial-name">Exward Newgate</h3>
+                                            <h4 class="testimonial-job">Founder Circle</h4>
+                                        </div>
+                                    </div>
+                                    <div class="testimonial-image">
+                                        <img srcset="https://images.unsplash.com/photo-1636734581435-0f1c756f448e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=764&q=80 2x"
+                                            alt="">
+                                    </div>
+                                </div>
+                                <div class="testimonial-item">
+                                    <div class="testimonial-content">
+                                        <div class="testimonial-rating">
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star"></ion-icon>
+                                        </div>
+                                        <p class="text testimonial-desc">
+                                            "Lorem ipsum dolor sit amet consectetur adipisicing elit.Veritatis eligendi
+                                            laborum
+                                            esse explicabo. Corporis!"
+                                        </p>
+                                        <div class="testimonial-author">
+                                            <h3 class="testimonial-name">Exward Newgate</h3>
+                                            <h4 class="testimonial-job">Founder Circle</h4>
+                                        </div>
+                                    </div>
+                                    <div class="testimonial-image">
+                                        <img srcset="https://images.unsplash.com/photo-1553272725-086100aecf5e?ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=765&q=80 2x"
+                                            alt="">
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- end testimonial -->
+            <!-- story -->
+            <section class="story">
+                <div class="container">
+                    <div class="story-header">
+                        <h2 class="heading heading--small">Trending stories</h2>
+                        <a href="#!" class="viewall">
+                            <span>View all</span>
+                            <ion-icon name="chevron-forward-outline"></ion-icon>
+                        </a>
+                    </div>
+                    <div class="story-list">
+                        <div class="story-item">
+                            <div class="story-image">
+                                <img srcset="./images/story1.png 2x" alt="">
+                            </div>
+                            <div class="story-content">
+                                <h3 class="story-title">The many benefits of taking a healing holiday</h3>
+                                <p class="story-desc">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, at deserunt est
+                                    ullam nulla temporibus doloremque?
+                                </p>
+                                <a href="#!" class="story-more">Read more</a>
+                            </div>
+                        </div>
+                        <div class="story-item">
+                            <div class="story-image">
+                                <img srcset="./images/story2.png 2x" alt="">
+                            </div>
+                            <div class="story-content">
+                                <h3 class="story-title">The best Kyoto restaurant to try japanese food</h3>
+                                <p class="story-desc">
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate veniam magnam
+                                    expedita deserunt quas molestias non vero...
+                                </p>
+                                <a href="#!" class="story-more">Read more</a>
+                            </div>
+                        </div>
+                        <div class="story-item">
+                            <div class="story-image">
+                                <img srcset="./images/story3.png 2x" alt="">
+                            </div>
+                            <div class="story-content">
+                                <h3 class="story-title">Skip Chichen Itza and dead to this remote Yucatan</h3>
+                                <p class="story-desc">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                </p>
+                                <a href="#!" class="story-more">Read more</a>
+                            </div>
+                        </div>
+                        <div class="story-item">
+                            <div class="story-image">
+                                <img srcset="./images/story4.png 2x" alt="">
+                            </div>
+                            <div class="story-content">
+                                <h3 class="story-title">Surf's up at these beginner spots around the world</h3>
+                                <p class="story-desc">
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda aliquid quod
+                                    nobis quia aliquam neque expedita ducimus fuga..
+                                </p>
+                                <a href="#!" class="story-more">Read more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- end story -->
+        </main>
+        <!-- end main -->
+        <!-- footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-top">
+                    <div class="footer-col">
+                        <img class="footer-logo" srcset="./images/logo.png 2x" alt="">
+                        <p class="text footer-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod velit
+                            omnis
+                            pariatur at, nobis odit assumenda praesentium voluptate libero neque.</p>
+                        <p class="text copy-right">&copy;2020 Thousand Sunny. All rights reserved</p>
+                    </div>
+                    <div class="footer-col">
+                        <h3 class="footer-title">Destinations</h3>
+                        <ul class="footer-links">
+                            <li class="footer-item">
+                                <a href="#!" class="footer-link">Africa</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="#!" class="footer-link">America</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="#!" class="footer-link">Asia</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="#!" class="footer-link">Euro</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="#!" class="footer-link">America</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h3 class="footer-title">Shop</h3>
+                        <ul class="footer-links">
+                            <li class="footer-item">
+                                <a href="#!" class="footer-link">Destinations</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="#!" class="footer-link">Destinations</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="#!" class="footer-link">Destinations</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="#!" class="footer-link">Destinations</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h3 class="footer-title">Interests</h3>
+                        <ul class="footer-links">
+                            <li class="footer-item">
+                                <a href="#!" class="footer-link">Destinations</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="#!" class="footer-link">Destinations</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="#!" class="footer-link">Destinations</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="#!" class="footer-link">Destinations</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="#!" class="footer-link">Destinations</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-bootom">
+                    <a href="#!" class="footer-socical">
+                        <ion-icon name="logo-twitter"></ion-icon>
+                    </a>
+                    <a href="#!" class="footer-socical">
+                        <ion-icon name="logo-facebook"></ion-icon>
+                    </a>
+                    <a href="#!" class="footer-socical">
+                        <ion-icon name="logo-instagram"></ion-icon>
+                    </a>
+                    <a href="#!" class="footer-socical">
+                        <ion-icon name="logo-linkedin"></ion-icon>
+                    </a>
+                    <a href="#!" class="footer-socical">
+                        <ion-icon name="logo-youtube"></ion-icon>
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./main.js"></script>
+</body>
+
+</html>

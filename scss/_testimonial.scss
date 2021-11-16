@@ -1,0 +1,170 @@
+@import "variables";
+.testimonial{
+    margin-bottom: 270px;
+    @media screen and (max-width: 1023px) {
+        margin-bottom: 75px;
+    }
+    .testimonial-main{
+        max-width: 1070px;
+        position: relative;
+        overflow: hidden;
+        @media screen and (min-width: 1024px) {
+            padding-left: 50px;
+        }
+        .testimonial-heading{
+            margin-bottom: 60px;
+            @media screen and (max-width:767px) {
+                margin-bottom: 30px;
+            }
+        }
+        .testimonia-wrapper{
+            overflow: hidden;
+            position: relative;
+            .arrows{
+                position: absolute;
+                bottom: 0px;
+                right: 0;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 10px 15px;
+                gap: 15px;
+                border-radius: 12px 0 0 0;
+                background-color: white;
+                z-index: 2;
+                .arrow{
+                    width: 30px;
+                    height: 30px;
+                    color: $gray-darkest;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 50%;
+                    border: 1px solid currentColor;
+                    cursor: pointer;
+                    &.disabled{
+                        color: $gray-dark;
+                        cursor: not-allowed;
+                    }
+                }
+            }
+            .testimonial-list{
+                position: relative;
+                transition: 0.5s ease-in;
+                .slick-arrow {
+                    color: $gray-dark;
+                    position: absolute;
+                    bottom: 7px;
+                    font-size: 22px;
+                    width: 35px;
+                    height: 35px;
+                    border: 1px solid currentColor;
+                    border-radius: 50%;
+                    background: transparent;
+                    z-index: 3;
+                    display: flex !important;
+                    justify-content: center;
+                    align-items: center;
+                    &:hover{
+                        color: $gray-darkest;
+                        cursor: pointer;
+                    }
+                }
+                .slick-prev{
+                    right: 55px;
+                    @media screen and (max-width: 767px) {
+                        left: 0;
+                        top: 50%;
+                        transform: translateY(-50%);
+                    }
+                }
+                .slick-next{
+                    right: 10px;
+                    @media screen and (max-width: 767px) {
+                        right: 0;
+                        top: 50%;
+                        transform: translateY(-50%);
+                    }
+                }
+                &::before{
+                    content: '';
+                    position: absolute;
+                    right: 0;
+                    bottom: 0;
+                    width: 100px;
+                    height: 50px;
+                    border-radius: 12px 0 0 0 ;
+                    background-color: white;
+                    z-index: 2;
+                    @media screen and (max-width: 767px) {
+                        background-color: transparent;
+                    }
+                }
+                .testimonial-item{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    flex: 1 0 100%;
+                    gap: 0 25px;
+                    @media screen and (max-width: 767px) {
+                        gap: 30px 0px;
+                        flex-direction: column;
+                    }
+                    .testimonial-content{
+                        max-width: 450px;
+                        .testimonial-rating{
+                            display: flex;
+                            align-items: center;
+                            gap: 15px;
+                            margin-bottom: 30px;
+                            font-size: 20px;
+                            color: #ffbb0c;
+                        }
+                        .testimonial-desc{
+                            color: black;
+                            margin-bottom: 40px;
+                            font-size: 24px;
+                            font-weight: 400;
+                            @media screen and (max-width:767px) {
+                                font-size: 20px;
+                                margin-bottom: 20px;
+                            }
+                        }
+                        .testimonial-author{
+                            .testimonial-name{
+                                font-weight: bold;
+                                font-size: 22px;
+                                color: black;
+                                margin-bottom: 10px;
+                                @media screen and (max-width:767px) {
+                                    font-size: 20px;
+                                }
+                            }
+                            .testimonial-job{
+                                font-size: 18px;
+                                font-weight: 400;
+                                color: rgba($color: #000000, $alpha: 0.85);
+                                @media screen and (max-width:767px) {
+                                    font-size: 16px;
+                                }
+                            }
+                        }
+                    }
+                    .testimonial-image{
+                        width: auto;
+                        height: 500px;
+                        @media screen and (max-width:767px) {
+                            height: 400px;
+                        }
+                        img{
+                            object-fit: cover;
+                            width: 100%;
+                            height: 100%;
+                            border-radius: 8px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

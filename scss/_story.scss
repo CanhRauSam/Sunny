@@ -1,0 +1,94 @@
+@import "variables";
+
+.story{
+    margin-bottom: 270px;
+    @media screen and (max-width: 1023px) {
+        margin-bottom: 75px;
+    }
+    .story-header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 60px;
+        @media screen and (max-width:767px) {
+            margin-bottom: 30px;
+        }
+    }
+    .story-list{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 0 25px;
+        @media screen and (max-width: 1023px) {
+            gap: 25px 25px;
+            grid-template-columns: repeat(2,1fr);
+        }
+        @media screen and (max-width: 739px) {
+            gap: 0 25px;
+            grid-template-columns: unset;
+            justify-content: flex-start;
+            grid-auto-columns: 300px;
+            grid-auto-flow: column;
+            overflow-x: auto;
+            overflow-y: hidden;
+            scroll-snap-type: x mandatory;
+            scroll-snap-stop: always;
+            scroll-behavior: smooth;
+            -ms-touch-action: manipulation;
+            touch-action: manipulation;
+            -webkit-overflow-scrolling: touch;
+        }
+        .story-item{
+            display: flex;
+            flex-direction: column;
+            scroll-snap-align: start;
+            
+            .story-image{
+                height: 230px;
+                margin-bottom: 15px;
+                overflow: hidden;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    border-radius: 8px 8px 0 0 ;
+                    object-position: top center; 
+                    transition: 0.5s;
+                }
+            }
+            &:hover img{
+                transform: scale(1.2);
+            }
+            .story-content{
+                font-family: $primary-font;
+                display: flex;
+                flex-direction: column;
+                flex-grow: 1;
+                .story-title{
+                    font-size: 19px;
+                    color: black;
+                    margin-bottom: 15px;
+                    font-weight: bold;
+                    line-height: 158%;
+                }
+                .story-desc{
+                    margin-bottom: 23px;
+                    line-height: 175%;
+                    font-size: 15px;
+                    color: $gray-darker;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 3;
+                    -webkit-box-orient: vertical;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+                .story-more{
+                    font-size: 15px;
+                    font-weight: 600;
+                    color: $primary-color;
+                    line-height: 28px;
+                    margin-top: auto;
+                }
+            }
+        }
+    }
+}

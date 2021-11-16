@@ -1,0 +1,38 @@
+@import "variables";
+.guide{
+    margin-bottom: 248px;
+    @media screen and (max-width: 1023px) {
+        margin-bottom: 75px;
+    }
+    .guide-main{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 0 80px;
+        @media screen and (max-width: 1023px) {
+            gap: 50px 0px;
+            flex-direction: column;
+        }
+        .guide-content{
+            @media screen and (mix-width: 1024px) {
+                max-width: 450px;
+                padding-left: 50px;
+            }
+            width: 100%;
+            .guide-heading{
+                margin-bottom: 20px;
+            }
+            .guide-desc{
+                margin-bottom: 33px;
+            }
+        }
+        .guide-image{
+            width: 100%;
+            object-fit: cover;
+            padding-right: 40px;
+            img{
+                width: 100%
+            }
+        }
+    }
+}

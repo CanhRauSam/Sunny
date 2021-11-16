@@ -1,0 +1,80 @@
+@import "variables";
+
+.destination{
+    margin-bottom: 232px;
+    @media screen and (max-width: 1023px) {
+        margin-bottom: 75px;
+    }
+    .destination-heading{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 56px;
+        @media screen and (max-width:767px) {
+            margin-bottom: 30px;
+        }
+    }
+    .destination-list{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        gap: 0 25px;
+        @media screen and (max-width: 1023px) {
+            gap: 25px 25px;
+            grid-template-columns: repeat(2,1fr);
+        }
+        @media screen and (max-width: 739px) {
+            gap: 0 25px;
+            grid-template-columns: unset;
+            justify-content: flex-start;
+            grid-auto-columns: 300px;
+            grid-auto-flow: column;
+            overflow-x: auto;
+            overflow-y: hidden;
+            scroll-snap-type: x mandatory;
+            scroll-snap-stop: always;
+            scroll-behavior: smooth;
+            -ms-touch-action: manipulation;
+            touch-action: manipulation;
+            -webkit-overflow-scrolling: touch;
+        }
+        .destination-item{
+            height: 337px;
+            position: relative;
+            scroll-snap-align: start;
+            .destination-image{
+                border-radius: 8px;
+                overflow: hidden;
+                object-fit: cover;
+                width: 100%;
+                height: 100%;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .destination-content{
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                background-color: white;
+                border-radius: 0 6px 0 0 ;
+                padding: 11px 32px 0px 0;
+                .destination-name{
+                    color: $gray-darkest;
+                    font-size: 17;
+                    font-family: $primary-font;
+                    line-height: 147%;
+                    margin-bottom: 10px;
+                }
+                .destination-country{
+                    font-size: 15px;
+                    color: $gray-darker;
+                }
+            }
+        }
+    }
+    ::-webkit-scrollbar{
+        // display: none;
+        // width: 0;
+    }
+}

@@ -1,0 +1,60 @@
+.menu-toggle{
+    display: none;
+    color: black;
+    font-size: 30px;
+    cursor: pointer;
+    ion-icon{
+        position: relative;
+        z-index: -1;
+    }
+    @media screen and (max-width:1023px) {
+        display: block;
+    }
+}
+.menu.is-show{
+    transform: translateX(0);
+}
+.menu{
+    display: flex;
+    align-items: center;
+    gap: 0 35px;
+    @media screen and (max-width:1023px) {
+        position: fixed;
+        top:0;
+        right: 0;
+        bottom: 0;
+        background-color: white;
+        box-shadow: 0 7px 29px 0 rgba(100,100,111,0.2);
+        width: 300px;
+        z-index: 5;
+        flex-direction: column;
+        align-items: flex-start;
+        transition: 0.25s linear;
+        transform: translateX(100%);
+    }
+    .menu-item{
+        @media screen and (max-width:1023px) {
+            width: 100%;
+            text-align: center;
+        }
+        .menu-link{
+            color: inherit;
+            @media screen and (max-width:1023px) {
+                display: block;
+                padding: 20px;
+            }
+        }
+        .btn{
+            @media screen and (max-width:1023px) {
+                width: 100%;
+                margin-top: 25px;
+            }
+        }
+    }
+    .menu-item:nth-last-child(1),
+    .menu-item:nth-last-child(2){
+        @media screen and (max-width:1023px) {
+            padding: 0 15px;
+        }
+    }
+}

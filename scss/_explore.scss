@@ -1,0 +1,38 @@
+.explore{
+    margin-bottom: 292px;
+    @media screen and (max-width:1023px) {
+        margin-bottom: 75px;
+    }
+    .explore-main{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 0 50px;
+        @media screen and (max-width:1023px) {
+            flex-direction: column-reverse;
+            gap: 50px 0;
+        }
+        .explore-heading{
+            margin-bottom: 20px;
+        }
+        .explore-desc{
+            margin-bottom: 33px;
+        }
+        .explore-image{
+            width: 100%;
+            object-fit: cover;
+            img{
+                width: 100%;
+            }
+        }
+        @media screen and (min-width:1024px) {
+            .explore-image{
+                transform: translateX(-50px);
+            }
+            .explore-content{
+                max-width: 508px;
+                padding-right: 27px;
+            }
+        }
+    }
+}

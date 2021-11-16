@@ -1,0 +1,26 @@
+@import "variables";
+
+body{
+    font-family: $primary-font;
+    font-size: 16px;
+    line-height: 1;
+    color: $gray;
+}
+.heading{
+    font-family: $secondary-font;
+    color: $gray-darkest;
+}
+.heading--small{
+    line-height: 139%;
+    font-size: 36px;
+    @media screen and (max-width:767px) {
+        font-size: 30px;
+    }
+}
+.text{
+    font-weight: 300;
+    line-height: 176%;
+    font-size: 17px;
+    color: $gray-darker;
+    font-family: $third-font;
+}
